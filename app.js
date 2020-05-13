@@ -1,3 +1,7 @@
+var express = require(express)
+var app = express()
+
+
 
 function resulton() {
 
@@ -239,3 +243,8 @@ function resulton() {
         }
     }
 }
+
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('Umber listening on port %s', port)
+})
