@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Converter</title>
+    <link rel="stylesheet" href="converterstyle3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <div class="header">
+    <h1>Converter Here</h1>
+    <p>The best conversion that you'll find!</p>
+    </div>
+
+    <div class="row">
+    <div class="leftcolumn">
+        <div class="card" >
+        <h2>TITLE HEADING</h2>
+        <div id="div3" style="padding: 20px; margin-right: 310px; display: inline;">
+            <span style="font-size: 20px;">From: </span>
+            <select id="from" style="border: none; color: rgba(236, 39, 39, 1);">
+                <option value="km">Km</option>
+                <option value="miles" selected>Miles</option>
+                <option value="meters">Meters</option>
+                <option value="cm">Cm</option>
+                <option value="dm">Dm</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+            </select>
+            <input type="number" id="input" style="margin-left: 10px;" placeholder="ex. Km" oninput="resulton()" onchange="change()"> 
+            <br>
+            <br>
+        </div>
+
+        <div id="div5" style="margin-right: 140px;">
+            <span style="font-size: 20px;">To: </span>
+            <select id="to" style="border: none; color: rgba(236, 39, 39, 1);">
+                <option value="km">Km</option>
+                <option value="miles">Miles</option>
+                <option value="meters">Meters</option>
+                <option value="cm">Cm</option>
+                <option value="dm">Dm</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+            </select>
+        </div>
+
+        <div id="div6" style="padding: 10px;">
+        <p id="result"></p>
+        </div>
+
+        <div id="div7" style="padding: 10px;">
+        <a class="a" href="converter3.html">Reset</a>
+        </div>
+        </div>
+        <div class="card">
+        <h2>More conversions</h2>
+        <h3>Temp Table</h3>
+        <div class="table" style="height:230px;">
+            <table class="table">
+                <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Formula</th>
+                </tr>
+                <tr>
+                    <td>Celsius</td>
+                    <td>Fahrenheit</td>
+                    <td>°F = °C * 1.8 + 32</td>
+                </tr>
+                <tr>
+                    <td>Fahrenheit</td>
+                    <td>Celsius</td>
+                    <td>°C = (°F - 32) / 1.8</td>
+                </tr>
+                <tr>
+                    <td>Celsius</td>
+                    <td>Kelvin</td>
+                    <td>K = °C + 273.15</td>
+                </tr>
+                <tr>
+                    <td>Kelvin</td>
+                    <td>Celsius</td>
+                    <td>°C = K - 273.5</td>
+                </tr>
+                <tr>
+                    <td>Fahrenheit</td>
+                    <td>Kelvin</td>
+                    <td>K = (°F - 32) * 5 / 9 + 273.15</td>
+                </tr>
+                <tr>
+                    <td>Kelvin</td>
+                    <td>Fahrenheit</td>
+                    <td>°F = (K - 273.15) * 9 / 5 + 32</td>
+                </tr>
+            </table>
+        </div>
+        <hr style="margin-top: 40px; width: 90%; ">
+        <p style="margin-top: 40px;">It's the first version, this site will be upgrade later! &#x1F604; </p>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+        <h2>About Me</h2>
+        <img src="heart.png" alt="Heart Image" height="100px" width="120px">
+        <p>I'ts my first website, thank you a lot for visit!</p>
+        <p style="font-size: 13px; margin-top: 60px;">Contact : juniordell123@gmail.com</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+    <a href="https://www.youtube.com/channel/UCnfFqG8Sja2q0LQBT0dw4vg?view_as=subscriber" target="_blank">
+        <i class="fab fa-youtube" style="color: red;"></i> YouTube chanel</a>
+    |
+    <a href="https://www.instagram.com/dellosbeljunior/"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+    <script src="converter3script.js"></script>
+</body>
+</html>
